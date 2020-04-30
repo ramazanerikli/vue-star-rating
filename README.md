@@ -1,8 +1,9 @@
-# Vue-star-rating
-A simple, customisable star rating component for vue apps.
+# vue-star-rating
+:star: A simple, customisable star rating component for vue apps.
+
+## Features
 
   - Counter
-  - Descriptions (soon)
   
 ![](https://s4.gifyu.com/images/rating.gif)
 
