@@ -1,5 +1,5 @@
-# vue-star-rating
-:star: A simple, customisable star rating component for vue apps.
+# :star: vue-star-rating
+A simple, customisable star rating component for vue apps.
 
 ![](https://s4.gifyu.com/images/rating.gif)
  
