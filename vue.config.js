@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: 'vue-star-rating'
+  publicPath: '/vue-star-rating/'
   }
