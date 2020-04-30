@@ -1,12 +1,14 @@
 # vue-star-rating
 :star: A simple, customisable star rating component for vue apps.
 
+![](https://s4.gifyu.com/images/rating.gif)
+
+ Checkout for demonstration: https://ramazanerikli.github.io/vue-star-rating/
+
 ## Features
 
   - Counter
-  
-![](https://s4.gifyu.com/images/rating.gif)
-
+ 
 ## Project setup
 ```
 npm install
