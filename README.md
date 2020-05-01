@@ -10,6 +10,7 @@ A simple, customisable star rating component for vue projects.
 ## Features
 
   - Counter
+  - Captions
  
 ## Installation
 ```
