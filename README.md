@@ -1,7 +1,7 @@
 # vue-star-rating :star: 
 A simple star rating component for vue projects.
 
-![](https://s4.gifyu.com/images/rating.gif)
+![](https://s6.gifyu.com/images/Peek-2020-05-02-00-22.gif)
  
  ## Demo
  
@@ -11,6 +11,7 @@ A simple star rating component for vue projects.
 
   - Counter
   - Captions
+  - Emojis
  
 ## Installation
 ```
