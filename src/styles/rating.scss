@@ -1,16 +1,19 @@
 .rating {
-    background: #fff;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin: 20px;
     color: #d8d5d5;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0,0,0,.15);
+    background: #fff;
     .list {
         list-style: none;
-        margin: 0;
+        margin: 0 20px 0 0;
         padding: 0;
         &:hover {
             .star {
-                color: #fcd93a;
+                color: #ffd61c;
             }
         }
         .star {
@@ -28,24 +31,46 @@
             &.active {
                 color: #fcd93a;
             }
-
+            span {
+                font-size: 42px;
+            }
         }
     }
-    .counter {
-        font-size: 40px;
-        margin-top: 30px;
-        display: block;
-        .divider {
+    .info {
+        font-size: 20px;
+        width: 97px;
+        max-width: 140px;
+        text-align: center;
+        color: #ccc;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.counter {
+            display: table;
             font-size: 30px;
-            margin: 0 5px;
-        }
-        .score-max {
-            vertical-align: sub;
-            font-size: 30px;
+            .divider {
+                font-size: 20px;
+                margin: 0 5px;
+            }
+            .score-max {
+                vertical-align: sub;
+                font-size: 20px;
+            }
         }
     }
 }
 
 
+@media (min-width: 768px) {
+    .rating {
+        min-width: 367px;
+    }
+}
 
+@media (max-width: 580px) {
+    .rating {
+        flex-direction: column;
+    }
+}
 

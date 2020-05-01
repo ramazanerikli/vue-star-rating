@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <Rating :grade="2" :maxStars="5" />
+    <Rating :grade="5" :maxStars="5" :hasCaption="true" />
     <Rating :grade="3" :maxStars="5" :hasCounter="true" />
   </div>
 </template>
