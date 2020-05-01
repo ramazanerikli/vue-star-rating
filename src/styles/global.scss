@@ -1,5 +1,6 @@
 body {
     &.home {
+        background: #ebebeb;
         height: 100vh;
     }
     #app {
@@ -8,10 +9,10 @@ body {
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        margin-top: 60px;
-        height: 80%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
         display: flex;
-        flex-direction: column;
       }
 }
 
