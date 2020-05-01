@@ -1,12 +1,12 @@
 .rating {
-    background: #fff;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    width: 367px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
     color: #d8d5d5;
     .list {
         list-style: none;
-        margin: 0;
+        margin: 0 20px 0 0;
         padding: 0;
         &:hover {
             .star {
@@ -28,24 +28,31 @@
             &.active {
                 color: #fcd93a;
             }
-
+            span {
+                font-size: 42px;
+            }
         }
     }
-    .counter {
-        font-size: 40px;
-        margin-top: 30px;
-        display: block;
+    .info {
+        font-size: 20px;
+        width: 97px;
+        max-width: 140px;
+        text-align: center;
+        color: #ccc;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .divider {
-            font-size: 30px;
             margin: 0 5px;
-        }
-        .score-max {
-            vertical-align: sub;
-            font-size: 30px;
         }
     }
 }
 
 
-
+@media (max-width: 580px) {
+    .rating {
+        flex-direction: column;
+    }
+}
 

@@ -2,14 +2,21 @@
   <div class="rating">
     <ul class="list">
       <li @click="rate(star)" v-for="star in maxStars" :class="{ 'active': star <= stars }" :key="star.stars" class="star">
-        <i :class="star <= stars ? 'fas fa-star' : 'far fa-star'"></i>
+        <span class="material-icons">star</span>
       </li>
     </ul>
-    <div v-if="hasCounter" class="counter">
+    
+    <div v-if="hasCounter" class="info counter">
       <span class="score-rating">{{ stars }}</span>
       <span class="divider">/</span>
       <span class="score-max">{{ maxStars }}</span>
     </div>
+
+    <div v-if="hasCaption" class="info caption">
+      {{ captions[stars] }}
+    </div>
+
+
   </div>
 </template>
 
@@ -17,10 +24,11 @@
 
 export default {
   name: 'Rating',
-  props: ['grade', 'maxStars', 'hasCounter'],
+  props: ['grade', 'maxStars', 'hasCounter', 'hasCaption'],
   data() {
     return {
-      stars: this.grade
+      stars: this.grade,
+      captions: ['Not rated', 'Very Poor', 'Poor', 'Ok', 'Good', 'Excellent']
     }
   },
   methods: {
@@ -29,7 +37,7 @@ export default {
         this.stars = this.stars === star ? star - 1 : star
       }
     }
-  }
+  },
 }
 </script>
 
