@@ -2,7 +2,7 @@
   <div class="rating">
     <ul class="list">
       <li @click="rate(star)" v-for="star in maxStars" :class="{ 'active': star <= stars }" :key="star.stars" class="star">
-        <i :class="star <= stars ? 'fas fa-star' : 'far fa-star'"></i>
+      <i :class="star <= stars ? 'fas fa-star' : 'far fa-star'"></i> 
       </li>
     </ul>
     
@@ -13,7 +13,14 @@
     </div>
 
     <div v-if="hasCaption" class="info caption">
-      {{ captions[stars] }}
+      <span class="score-caption">{{ captions[stars] }}</span>
+    </div>
+
+    <div v-if="hasEmoji" class="info emoji">
+      <span class="score-emoji">
+        <i :class="`fas ${emojis[this.stars - 1]}`"></i>
+        <span v-if="this.stars < 1">Not rated</span>
+      </span>
     </div>
 
 
@@ -24,11 +31,12 @@
 
 export default {
   name: 'Rating',
-  props: ['grade', 'maxStars', 'hasCounter', 'hasCaption'],
+  props: ['grade', 'maxStars', 'hasCounter', 'hasCaption', 'hasEmoji'],
   data() {
     return {
       stars: this.grade,
-      captions: ['Not rated', 'Very Poor', 'Poor', 'Ok', 'Good', 'Excellent']
+      captions: ['Not rated', 'Too Bad', 'Bad', 'Normal', 'Good', 'Excellent'],
+      emojis: ['fa-frown', 'fa-meh', 'fa-smile']
     }
   },
   methods: {
@@ -36,6 +44,7 @@ export default {
       if (typeof star === 'number' && star <= this.maxStars && star >= 0) {
         this.stars = this.stars === star ? star - 1 : star
       }
+      console.log(this.emojis[1])
     }
   },
 }
