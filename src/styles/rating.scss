@@ -4,13 +4,16 @@
     align-items: center;
     padding: 50px;
     color: #b7b7b7;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 33px rgba(19, 18, 18, 0.09);
     .list {
         list-style: none;
         padding: 0;
         margin: 0 20px 0 0;
         &:hover {
             .star {
-                color: gold;
+                color: #ffe100;
             }
         }
         .star {
@@ -27,7 +30,7 @@
                 margin-left: 0;
             }
             &.active {
-                color: gold;
+                color: #ffe100;
             }
         }
     }
@@ -36,12 +39,6 @@
         font-size: 40px;
         text-align: center;
         display: table;
-        &.caption {
-            font-size: 30px;
-            .score-caption {
-                vertical-align: middle;
-            }
-        }
         .divider {
             margin: 0 5px;
             font-size: 30px;
