@@ -4,12 +4,9 @@ body {
     }
     #app {
         font-family: 'Spartan', sans-serif;   
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         height: 100vh;
       }
 }
