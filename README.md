@@ -1,5 +1,5 @@
 # vue-star-rating :star: 
-A star rating component for vue projects.
+A simple star rating component for vue projects.
 
 ![](https://s6.gifyu.com/images/rating.gif)
  
