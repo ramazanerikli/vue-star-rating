@@ -1,7 +1,7 @@
 # vue-star-rating :star: 
 A simple star rating component for vue projects.
 
-![](https://s6.gifyu.com/images/rating.gif)
+![Alt Text](vue-star-rating.gif)
  
  ## Demo
  
