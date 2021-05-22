@@ -1,5 +1,6 @@
 # vue-star-rating :star: 
-A simple star rating component for vue projects.
+
+A lightweight and minimal star rating component to rate products, comments, posts on the Vue.js application.
 
 ![Alt Text](vue-star-rating.gif)
  
@@ -10,7 +11,33 @@ A simple star rating component for vue projects.
 ## Features
 
   - Counter
- 
+
+## How to Use
+
+1. Import the Star Rating Component.
+
+```
+import Rating from './components/Rating.vue'
+```
+2. Add the star rating component to the app template and adjust the current and max rating values as follows:
+
+```
+<Rating :grade="3" :maxStars="5" :hasCounter="true" />
+```
+3. Render the star rating component.
+
+```
+export default {
+  name: 'App',
+  components: {
+    Rating
+  },
+  beforeCreate: function() {
+    // do something
+  }
+}
+```
+
 ## Installation
 ```
 npm install
